@@ -2,12 +2,12 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_myriad_options'
-  s.version     = '0.1.4'
+  s.version     = '0.1.5'
   s.summary     = 'allow customers to add products with any combination of options to their cart. No variants needed!'
   s.description = 'lets the customer choose any combination of Option Values for a Product when adding to cart, and enter customized text for an option if needed. No maintenance of Spree Variants for every option combination is required.'
-  s.required_ruby_version = '>= 1.9.2'
+  s.required_ruby_version = '>= 2.0.0'
 
-  s.author    = 'Samuel Z Beam'
+  s.author    = ['Samuel Z Beam']
   s.email     = 'sbeam@onsetcorps.net'
   s.homepage  = 'http://www.onsetdevelopment.com'
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.1'
+  s.add_dependency 'spree_core', '~> 2.0'
 
   s.add_development_dependency 'rspec-rails',  '~> 2.9.0'
   s.add_development_dependency 'capybara'
