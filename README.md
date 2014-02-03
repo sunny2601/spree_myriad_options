@@ -1,6 +1,8 @@
 Spree Myriad Options
 ==================
 
+UPDATE: Changed dependencies and commented out attr_accessible in preparation for Rails 4.
+
 This extension makes a few changes to the Spree data model and controller
 logic, to let you create Products with many Option Types/Values, but not have
 to maintain sets of Variants for each combination.
@@ -12,7 +14,7 @@ store admin would be faced with creating and maintaining 97,656,259 Variants -
 just for that product.
 
 This extension bypasses the LineItem/Variant/Option Value relationship to make
-that uneccessary. You just create the list of Option Types and Option Values
+that unnecessary. You just create the list of Option Types and Option Values
 normally in Spree, and associate those as needed to Products. A LineItem then
 has many OptionValue's directly, and only is tied to the 'master' variant for
 that product.

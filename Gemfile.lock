@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    spree_myriad_options (0.1.5)
-      spree_core (~> 2.0)
+    spree_myriad_options (0.1.6)
+      spree_core (~> 2.1)
 
 GEM
   remote: http://rubygems.org/
@@ -227,6 +227,7 @@ DEPENDENCIES
   factory_girl_rails (~> 1.7)
   ffaker
   guard-rspec (~> 0.5.0)
+  rails (>= 4.0.1)
   rspec-rails (~> 2.9.0)
   shoulda-matchers (~> 1.0.0)
   spree_myriad_options!
