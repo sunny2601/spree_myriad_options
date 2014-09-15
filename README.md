@@ -1,8 +1,11 @@
 # Spree Myriad Options
 
+**IN DEVELOPMENT:** We are trying to get this upgraded to work with Spree 2.3.
 
 `UPDATE: Changed dependencies and commented out attr_accessible in preparation for Rails 4.`
 
+
+## Older Documentation
 This extension makes a few changes to the Spree data model and controller
 logic, to let you create Products with many Option Types/Values, but not have
 to maintain sets of Variants for each combination.
