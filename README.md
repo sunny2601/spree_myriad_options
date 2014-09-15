@@ -1,7 +1,7 @@
-Spree Myriad Options
-==================
+# Spree Myriad Options
 
-UPDATE: Changed dependencies and commented out attr_accessible in preparation for Rails 4.
+
+`UPDATE: Changed dependencies and commented out attr_accessible in preparation for Rails 4.`
 
 This extension makes a few changes to the Spree data model and controller
 logic, to let you create Products with many Option Types/Values, but not have
@@ -37,21 +37,19 @@ number of fields below each option value, which they can fill out as needed.
 There is as yet no validation on these user-generated values.
 
 
-Status
-======
+## Status
 
-0.1.0 - Tests complete and passing.
-0.1.1 - bugfix for edge case
-0.1.2 - Works with spree 1.1.3
+- 0.1.0 - Tests complete and passing.
+- 0.1.1 - bugfix for edge case
+- 0.1.2 - Works with spree 1.1.3
 
-Example
-=======
+## Example
 
-Add to gemfile
+### Add to gemfile
 
     gem 'spree_myriad_options', :git => 'git://github.com/sbeam/spree_myriad_options.git'
 
-Install
+### Install
 
     $ bundle
     $ rails generate spree_myriad_options:install
@@ -69,8 +67,7 @@ Note, this extension might not jive with some others, like
 `spree_variant_options` (although it's a great extension, it still would
 require maintaining Variants for each option combination)
 
-Similar Gems
-------------
+### Similar Gems
 
 You might also want to look at
 [spree_flexi_variants](https://github.com/jsqu99/spree_flexi_variants) which
@@ -81,22 +78,20 @@ features, but think of this as more a clean, well-tested blank-slate that can
 be built upon to meet your app's needs, rather than a turnkey install-and-go
 extension.
 
-TODO
-----
+## TODO
 
-  * replace simple `option_value.customization_lines` with Customization
+  - replace simple `option_value.customization_lines` with Customization
     classes, ie includable modules with field definitions and validation
     callbacks
-  * (maybe) some JS to auto-update the price on the product detail form
+  - (maybe) some JS to auto-update the price on the product detail form
 
-Contributions
--------------
+## Contributions
 
 feedback, ideas, reports, new features and fixes would be great. Fork and
 create a pull request. Patches should come with green tests.
 
-Testing
--------
+
+## Testing
 
 Be sure to bundle your dependencies and then create a dummy test app for the
 specs to run against.
@@ -107,7 +102,7 @@ in Spree 1.1.2+, you should be able to do this -
     $ bundle exec rake test_app
     $ bundle exec guard
 
-But, due to an issue with the dummy app generator and namespacing in
+But, due to an issue with the dummy app generator and name-spacing in
 Spree 1.1.1 (see https://github.com/spree/spree/issues/1580) you will need to
 create a barebones Spree site somewhere else and hook this engine to that for
 testing. See `spec/spec_helper.rb` and change the `path_to_test_store` value.
