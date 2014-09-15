@@ -1,3 +1,6 @@
+[![Dependency Status](https://gemnasium.com/rietta/spree_myriad_options.svg)](https://gemnasium.com/rietta/spree_myriad_options)
+
+
 # Spree Myriad Options
 
 **IN DEVELOPMENT:** We are trying to get this upgraded to work with Spree 2.3.
